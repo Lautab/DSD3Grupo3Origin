@@ -98,11 +98,14 @@ h2{
 }
 
 @media screen and (max-width: 768px) {
+    section{
+        width: 85%;
+    }
     p{
-        font-size: 2.2vw !important;
+        font-size: 3.2vw !important;
     }
     h3{
-        font-size: 3.5vw !important;
+        font-size: 4vw !important;
     }
 }
 
@@ -161,6 +164,9 @@ h2{
     cursor: pointer;
 }
 
+.pregunta details p{
+    font-size: 1.4vw;
+} 
 
 /* Flecha en contenido colapsado */
 .pregunta details summary::marker {
@@ -182,14 +188,20 @@ h2{
     .contenedor-preguntas{
         width: 80%;
     }
+    .pregunta{
+        padding: 2vw;
+    }
     .pregunta h5{
         font-size: 3vw;
     }
     .pregunta details summary{
-        font-size: 2vw;
+        font-size: 2.8vw;
     }
     .pregunta details summary::marker {
-        font-size: 2.2vw;  
+        font-size: 3.2vw;  
+    }
+    .pregunta details p{
+        font-size: 3vw;
     }
 }
 
