@@ -1,0 +1,225 @@
+.informate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainSec{
+    filter: opacity(0%);
+    animation: showSection .7s linear 0s 1 normal forwards;
+}
+
+@keyframes showSection {
+    0%{
+        filter: opacity(0%);
+    }
+    25%{
+        filter: opacity(40%);
+    }
+    50%{
+        filter: opacity(70%);
+    }
+    80%{
+        filter: opacity(90%);
+    }
+    100%{
+        filter: opacity(100%);
+    }
+} 
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-bottom: 15vh;
+}
+
+h2{
+    font-family: "TitleFont";
+    text-align: center;
+    margin: 8vh 0vw;
+    color: rgba(112, 4, 214);
+}
+
+.info-uno h3{
+    font-size: 2.5vw;
+    width: 40%;
+    font-family: "TextBoldFont";
+    color: rgba(112, 4, 214);
+}
+
+.info-uno p {
+    font-size: 1.2vw;
+    width: 60%;
+    font-family: "TextFont";
+}
+
+
+.info-dos h3{
+    font-size: 2.5vw;
+    width: 40%;
+    font-family: "TextBoldFont";
+    color: rgba(112, 4, 214);
+    text-align: center;
+}
+
+.info-dos p {
+    font-size: 1.2vw;
+    width: 60%;
+    font-family: "TextFont";
+    text-align: start;
+}
+
+.info-tres{
+    flex-direction: column;
+}
+
+.info-tres h3{
+    font-size: 2.5vw;
+    width: 100%;
+    font-family: "TextBoldFont";
+    color: rgba(112, 4, 214);
+    text-align: start;
+}
+
+.info-tres p{
+    font-size: 1.2vw;
+    width: 100%;
+    font-family: "TextFont";
+    text-align: start;
+    margin-top: 2vh;
+}
+
+.volver{
+    font-size: 3vw;
+    margin-bottom: 7vh;
+    text-decoration: none;
+    color: rgba(112, 4, 214);
+}
+
+@media screen and (max-width: 768px) {
+    p{
+        font-size: 2.2vw !important;
+    }
+    h3{
+        font-size: 3.5vw !important;
+    }
+}
+
+/* Consulta */
+
+.consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.consulta h2{
+    margin: 6vh;
+}
+.consulta input{
+    font-size: 2vw;
+    width: 60%;
+    padding: 1vh 2vw;
+    border: none;
+    /* border-radius: 2vw; */
+    border: 0.1vw solid rgba(112, 4, 214);
+    outline: none;
+}
+
+.consulta input::placeholder{
+    color: rgba(113, 4, 214, 0.429);
+}
+
+.contenedor-preguntas{
+    width: 60%;
+    height: 40vh;
+    overflow-y: scroll;
+}
+
+.pregunta{
+    border: 0.1vw solid rgb(162, 162, 162);
+    padding: 1vw;
+}
+
+.pregunta h5{
+    font-family: "TextBoldFont";
+    color: rgb(75, 4, 142);
+    font-size: 1.4vw;
+}
+
+.pregunta p{
+    font-family: "TextFont";
+}
+
+.pregunta details summary {
+    color: indigo;
+    font-size: 1.4vw;
+    font-family: "TextFont";
+}
+
+.pregunta details:hover{
+    cursor: pointer;
+}
+
+
+/* Flecha en contenido colapsado */
+.pregunta details summary::marker {
+    content: "Abrir ";
+    color: indigo;
+    font-size: 1.6vw;
+}
+
+  /* Flecha en contenido desplegado */
+.pregunta details[open] summary::marker {
+    content: "Cerrar ";
+}
+
+@media screen and (max-width: 768px) {
+    .consulta input{
+        width: 80%;
+        font-size: 3vw;
+    }
+    .contenedor-preguntas{
+        width: 80%;
+    }
+    .pregunta h5{
+        font-size: 3vw;
+    }
+    .pregunta details summary{
+        font-size: 2vw;
+    }
+    .pregunta details summary::marker {
+        font-size: 2.2vw;  
+    }
+}
+
+.masPag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.masPag div h4{
+    color: indigo;
+    font-family: "TextBoldFont";
+}
+
+.masPag div {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+}
+
+.masPag div a{
+    text-decoration: underline;
+    color: black;
+    font-family: "TextFont";
+}
+
+@media screen and (max-width: 768px) {
+    h2{
+        font-size: 5vw;
+    }
+}
+

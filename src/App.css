@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "TitleFont";
+  src: url(./assets/fonts/Title.ttf);
+}
+
+@font-face {
+  font-family: "TextFont";
+  src: url(./assets/fonts/TextFont.otf);
+}
+
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  padding: 2vh 0vw 3vh 0vw;
+  background-color: rgba(112, 4, 214, 0.955);
+  color: white;
+}
+
+h1{
+  font-family: "TitleFont";
+  font-size: 3.5vw;
+}
+
+ul{
+  margin-left: 2.5vw;
+  list-style-type: none;
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5vw;
+  font-family: "TextFont";
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+.Actived{
+  color: white;
+}
+.Desactived{
+  color: rgb(182, 181, 181);
+}
+
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 4.5vw;
+  }
+  ul{
+    width: 80%;
+    font-size: 3vw;
+  }
+}
+
